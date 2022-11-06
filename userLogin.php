@@ -10,4 +10,4 @@
         header("Location: userHome.php");
     }
     else
-        header("Location: userLogin.php");
+        header("Location: index.php");

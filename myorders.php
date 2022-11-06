@@ -8,16 +8,18 @@
 <html>
     <head>
         <title>Food Ordering System | My Order</title>
+        <link rel="stylesheet" href="./css/myorders.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
     </head>
     <body>
         <a href="logout.php">Logout</a>
 
-        <table>
+        <table class="table table-dark table-striped">
             <thead>
                 <tr>
-                    <th>Id</th>
-                    <th>Order</th>
-                    <th>Status</th>
+                    <th scope="col">Id</th>
+                    <th scope="col">Order</th>
+                    <th scope="col">Status</th>
                 </tr>
             </thead>
             <tbody>

@@ -1,0 +1,26 @@
+*
+{
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.05rem;
+}
+
+body
+{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/indexbg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: brightness(80%);
+}
+
+.table
+{
+    width: 50% !important;
+}
