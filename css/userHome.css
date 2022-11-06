@@ -1,0 +1,18 @@
+*
+{
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.05rem;
+}
+
+body
+{
+    width: 100vw;
+    overflow-x: hidden;
+    background-image: url("../img/userhomebg.png");
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: brightness(80%);
+}

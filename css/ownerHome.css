@@ -1,0 +1,16 @@
+*
+{
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.05rem;
+}
+
+body
+{
+    width: 100vw;
+    background-image: url("../img/ownerhomebg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: brightness(80%);
+}

@@ -8,6 +8,7 @@
 <html>
     <head>
         <title>Food Ordering System | My Order</title>
+        <link rel="stylesheet" href="./css/ownerHome.css">
     </head>
     <body>
     <a href="logout.php">Logout</a>
@@ -22,22 +23,22 @@
         </thead>
         <tbody>
             <?php
-            while ($row = $result -> fetch_row())
-            {
-                ?>
-                <tr>
-                    <td><?php echo $row[0]; ?></td>
-                    <td><?php echo $row[2]; ?></td>
-                    <td><?php echo $row[3]; ?></td>
-                    <td>
-                        <form action="accept.php" method="post">
-                            <input type="text" name="id" value="<?php echo $row[0]; ?>" style="display: none">
-                            <input type="submit" value="✓">
-                        </form>
-                    </td>
-                </tr>
-                <?php
-            }
+                while ($row = $result -> fetch_row())
+                {
+                    ?>
+                    <tr>
+                        <td><?php echo $row[0]; ?></td>
+                        <td><?php echo $row[2]; ?></td>
+                        <td><?php echo $row[3]; ?></td>
+                        <td>
+                            <form action="accept.php" method="post">
+                                <input type="text" name="id" value="<?php echo $row[0]; ?>" style="display: none">
+                                <input type="submit" value="✓">
+                            </form>
+                        </td>
+                    </tr>
+                    <?php
+                }
             ?>
         </tbody>
     </table>

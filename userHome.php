@@ -1,5 +1,6 @@
 <html>
     <head>
+        <link rel="stylesheet" href="./css/userHome.css">
         <title>Food Ordering System | Home</title>
     </head>
     <body>
