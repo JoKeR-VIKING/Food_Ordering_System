@@ -13,7 +13,13 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
     </head>
     <body>
-        <a href="logout.php">Logout</a>
+        
+        <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+                 <img src="./img/logo.jpg" alt="Image not found!">
+        </a>
+         <a href="logout.php">Logout</a>
+        </nav>
 
         <table class="table table-dark table-striped">
             <thead>

@@ -6,10 +6,19 @@
         <title>Food Ordering System | Home</title>
     </head>
     <body>
-        <a href="logout.php">Logout</a>
-
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+                 <img src="./img/logo.jpg" alt="Image not found!">
+        </a>
         <a href="myorders.php">My Orders</a>
 
+         <a href="logout.php">Logout</a>
+        </nav>
+
+       
+       
+
+        
         <?php
             if (!isset($_COOKIE['userEmail']))
                 header("Location: index.php");
