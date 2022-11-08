@@ -6,19 +6,29 @@
         <title>Food Ordering System | Home</title>
     </head>
     <body>
-    <nav class="navbar navbar-light bg-light">
-        <a class="navbar-brand" href="#">
-                 <img src="./img/logo.jpg" alt="Image not found!">
-        </a>
-        <a href="myorders.php">My Orders</a>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./img/logo.png" alt="Logo" width="90" height="50" class="d-inline-block align-text-top">
+                </a>
 
-         <a href="logout.php">Logout</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="myorders.php">My Orders</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="logout.php">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
 
-       
-       
-
-        
         <?php
             if (!isset($_COOKIE['userEmail']))
                 header("Location: index.php");

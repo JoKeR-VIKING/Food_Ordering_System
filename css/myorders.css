@@ -11,7 +11,6 @@ body
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     background-image: url("../img/indexbg.png");
     background-position: center;
@@ -23,4 +22,5 @@ body
 .table
 {
     width: 50% !important;
+    margin-top: 5% !important;
 }

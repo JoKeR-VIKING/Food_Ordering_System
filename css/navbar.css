@@ -1,7 +1,4 @@
-.navbar-brand img
+.navbar
 {
-    position: relative;
-    width: 90px;
-    left: 15px;
-    
+    width: 100% !important;
 }

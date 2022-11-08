@@ -1,4 +1,10 @@
 <?php
+    if (!isset($_COOKIE['userEmail']))
+    {
+        header("Location: index.php");
+        return;
+    }
+
     $conn = new mysqli("localhost:3306", "root", "", "food_ordering_system");
     $sql = sprintf("SELECT * FROM Orders WHERE `email` = '%s'", $_COOKIE['userEmail']);
 
@@ -13,17 +19,28 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
     </head>
     <body>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./img/logo.png" alt="Logo" width="90" height="50" class="d-inline-block align-text-top">
+                </a>
 
-      
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="userHome.php">Home</a>
+                        </li>
 
-        <nav class="navbar navbar-light bg-light">
-        <a class="navbar-brand" href="#">
-                 <img src="./img/logo.jpg" alt="Image not found!">
-        </a>
-         <a href="logout.php">Logout</a>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="logout.php">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-
-       
 
         <table class="table table-dark table-striped">
             <thead>
