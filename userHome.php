@@ -1,6 +1,8 @@
 <html>
     <head>
         <link rel="stylesheet" href="./css/userHome.css">
+        <link rel="stylesheet" href="./css/navbar.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
         <title>Food Ordering System | Home</title>
     </head>
     <body>
